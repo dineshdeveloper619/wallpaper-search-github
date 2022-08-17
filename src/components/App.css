@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Wallpaper';
+    src: url(./old_stamper.ttf) format("ttf");
+}
+
+nav
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    background-color: white;
+    margin-top: 10px;
+}
+
+nav::after
+{
+    content:"";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: 0;
+    right: -90px;
+    transform: skew(150deg);
+    background: rgb(11, 76, 129);
+}
+nav::before
+{
+    content:"";
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    z-index: 0;
+    right: -70px;
+    transform: skew(150deg);
+    background: rgb(11, 71, 120);
+}
+
+h3
+{
+    position: relative;
+    font-family: 'Wallpaper';
+    font-size: 30px;
+    z-index: 2;
+    text-shadow: 2px 2px 8px black;
+    color:  rgb(16, 47, 139);
+}
+
+h3 span
+{
+    font-size: 20px;
+    margin-left: 5px;
+    color: black;
+}
+
+.right a
+{
+
+    position: relative;
+    z-index: 2;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(172, 172, 172);
+    align-items: center;
+    text-align: center;
+    justify-content:center ;
+    margin: 0px 30px;
+    
+}
+
+.right a:hover{
+    color: white;
+}
+
+
+.right a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: rgb(197, 203, 224);
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in-out;
+
+}
+.right a:hover::before{
+    width: 100%;
+}
+
+button
+{
+    outline: none;
+    border: none;
+    border-radius: 0px 5px 5px 0px;
+    padding: 15px;
+
+}
+/*image section*/
+
+.contain
+{
+    max-width: 85%;
+    margin: 20px auto;
+    margin-top: 30px;
+}
+
+.imagecontainer
+{
+    columns: 3 100px;
+    gap: 15px;
+    
+}
+
+.imagecontainer img
+{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/*About*/
+
+.About-container
+{
+    width: 40%;
+    margin: 30px auto;
+    padding: 20px;
+    padding-bottom: 40px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(255, 255, 255, 0.155);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(100px);
+    box-shadow: 5px 5px 20px rgba(12, 12, 12, 0.568);
+}
+
+.About-container img
+{
+    display: block;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 5px solid rgba(255, 255, 255, 0.491);
+    box-shadow: 10px 10px 30px black;
+}
+
+.About-container h1{
+    font-family: sans-serif;
+    font: 800;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(196, 192, 192);
+}
+
+.About-container p
+{
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 16px;
+    color: rgb(148, 144, 144);
+}
+
+.About-container p a
+{
+    text-decoration: none;
+}
+
+#contact{
+    text-decoration: underline;
+}
+
+#thank
+{
+    font-size: 25px;
+}
